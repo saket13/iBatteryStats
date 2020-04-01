@@ -1,0 +1,2 @@
+#!/bin/sh
+nohup python3 /Users/saket/Downloads/iBatteryStats/battery.py &
