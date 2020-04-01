@@ -6,7 +6,9 @@ I use macOS X(10.14.5) Mojave and Apple removed the option to show the battery t
 
 **Charging & Discharging:**
 
-![Charging](Charging.png) ![Discharging](Discharging.png)
+| [![Charging](Charging.png)]  | [![Discharging](Discharging.png)] |
+|:---:|:---:|
+| CHARGING | DISCHARGING |
 
 **Low Battery Notification:**
 
