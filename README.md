@@ -2,7 +2,7 @@
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rumps)
-[![Py2app](https://img.shields.io/pypi/pyversions/py2app?color=blue&label=python&logo=k)]
+[![Py2app](https://img.shields.io/pypi/pyversions/py2app)]
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
