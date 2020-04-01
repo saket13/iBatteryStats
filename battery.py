@@ -29,7 +29,7 @@ class App(rumps.App):
         #Changing the title of the menu bar items to show the values rendered by the get_values() function 
 
         self.menu['Charge'].title, self.menu['Cells'].title, self.menu['Time'].title, self.menu['Temperature'].title, self.menu['Cycles'].title, self.menu['Max_Capacity'].title, self.menu['Serial'].title, self.menu['Age'].title = self.get_values()
-        if (self.menu['Charge'].title == "Charge Left::  "+str(15)+ " %" or self.menu['Charge'].title == "Charge Left::  "+str(10)+ " %"):
+        if (self.menu['Charge'].title == "Charge Left::  "+str(15)+ " %" or self.menu['Charge'].title == "Charge Left::  "+str(10)+ " %" and self.menu['Cells'].title[0] == "D"):
             rumps.notification("iBatteryStats", "Notification", " ⚡️ Charge Your Mac ⚡️")
         self.title= self.menu['Cells'].title[11:]
 
