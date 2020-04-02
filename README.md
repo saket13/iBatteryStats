@@ -4,6 +4,7 @@
 ![Py2app](https://img.shields.io/pypi/pyversions/py2app)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
+[![GitHub license](https://img.shields.io/github/license/saket13/iBatteryStats)](https://github.com/saket13/iBatteryStats/blob/master/LICENSE)
 
 I use macOS X(10.14.5) Mojave and Apple removed the option to show the battery time remaining in the statusbar since the macOS X(10.12.2) release. So I made this my own little thing- its far from being perfect but hey, it works! ..
 
@@ -87,4 +88,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-* No License for now..
+* MIT
