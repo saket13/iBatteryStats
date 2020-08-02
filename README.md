@@ -74,7 +74,7 @@ sudo chmod +x path_to_iBatteryStats/iBatteryStats/app_shell
 ```
 ## Future Ideas and TODOs
 
-* Use `bokeh` to chart out the data?
+* Integrate other power management tools.
 
 * Handle every second stats and update it .
     * For now it is working every minute.
