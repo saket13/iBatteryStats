@@ -1,4 +1,4 @@
-# iBatteryStats
+# iBatteryStats 🔋                                                
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![Py2app](https://img.shields.io/pypi/pyversions/py2app)
@@ -6,13 +6,17 @@
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 [![GitHub license](https://img.shields.io/github/license/saket13/iBatteryStats)](https://github.com/saket13/iBatteryStats/blob/master/LICENSE)
 
-I use macOS X(10.14.5) Mojave and Apple removed the option to show the battery time remaining in the statusbar since the macOS X(10.12.2) release. So I made this my own little thing to keep an eye on my dying Macbook battery !! ..
+I use MacOS X(10.14.5) Mojave and Apple removed the option to show the battery time remaining in the statusbar since the macOS X(10.12.2) release.**iBatteryStats** is a MacOSX menu bar app 👨🏻‍💻 built to keep an eye on *slowly dying macbook battery* . Dedicated to all Apple MacBook Users with ❤️. 
+
+*****Find the Project's Github Link Here👇*****
+
+[![Project Link](https://img.shields.io/badge/iBatteryStats🔋-Github-green.svg?style=for-the-badge)](https://github.com/saket13/iBatteryStats)
 
 ## Screenshots
 
 **Charging & Discharging:**
 
-| ![Charging](Charging.png)  |  ![Discharging](Discharging.png) |
+| ![Charging](ibattery.png)  |  ![Discharging](Discharging.png) |
 |:---:|:---:|
 | CHARGING | DISCHARGING |
 
@@ -22,10 +26,24 @@ I use macOS X(10.14.5) Mojave and Apple removed the option to show the battery t
 
 ## Design
 
-This Apple Menu bar application has two parts - a bash script that runs as a cron job and dumps battery stats to log file, and a Python script that processes the log file to generate cumulative statistics like Charge Left, Status, Time Left, Cycles and Temperature etc and the Python script has been converted to a Status bar app using Rumps.
+This Apple Menu bar application has two parts 
+- A **Bash script** that runs as a **cron job** and dumps battery stats to a log file, 
+- A **Python script** that processes the log file to generate cumulative statistics like Charge Left, Status, Time Left, Cycles and Temperature etc & 
+- Everything has been wrapped to a Status bar app using Rumps.
 
-I've also modified the Python script that is being run to alert you (via Rumps Desktop Notification Feature) of 'Charge Your Mac' in the last 15 and 10 mins remaining.
+I've also modified the Python script that is being run to alert you (via **Rumps Desktop Notification Feature**) of 'Charge Your Mac' in the last 15 and 10 mins remaining.
 
+## Package Structure
+    
+    iBatterstats.app.zip      # Root Package (ZIP Format)
+    .
+    ├── Contains              # For data handling.
+    │   ├── Python Script     # Reads LOG file stats
+    │   ├── BASH Script       # Dumps stats to LOG File     
+    │   └── LOG File          # Contains all stats updated through crontab
+    |
+    └── IBatteryStats     
+    
 ## Installation
 
 Clone the repo and install Rumps
@@ -71,7 +89,8 @@ nohup python3 path_to_iBatteryStats/iBatteryStats/battery.py &
 
 sudo chmod +x path_to_iBatteryStats/iBatteryStats/app_shell
 
-```
+```     
+    
 ## Future Ideas and TODOs
 
 * Integrate other power management tools.
@@ -84,8 +103,35 @@ sudo chmod +x path_to_iBatteryStats/iBatteryStats/app_shell
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+See [Contributing Guidelines](CONTRIBUTING.md). 
+
+## Contact
+If you need any help, you can connect with me.
+
+Visit:- [saketsaumya.info](https://saketsaumya.info)
 
 ## License
 
-* MIT
+```
+MIT License
+
+Copyright (c) 2020 Saket Saumya
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
